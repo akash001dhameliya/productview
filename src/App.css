@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+.background
+{
+  background-color: #272B33;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.main_card
+{
+  background: #3C3E44;
   color: white;
+  transform: translateY(0px);
+  
+  text-align: center;
+  transition: .5s;
 }
 
-.App-link {
-  color: #61dafb;
+img
+{
+  transform: rotateY(0deg);
+  object-fit: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main_card:hover img
+{
+  transform: rotateY(360deg);
+}
+
+.main_card:hover
+{
+  transform: translateY(-10px);
+  
+  transition: .5s;
+  box-shadow: 2px 2px 5px black;
+}
+
+.load
+{
+  height: 98vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.location_hover
+{
+  color:rgb(202, 200, 200);
+  transition: .5s;
+}
+
+.main_card:hover .location_hover
+{
+  color:rgb(153, 82, 16);
+  /* font-size: larger; */
+}
+
+.main_card:hover .img_hover img
+{
+    transform: rotateY(360deg);
+    transition: .5s;
 }
